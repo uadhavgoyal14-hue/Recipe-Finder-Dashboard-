@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍽 Recipe Finder Dashboard</h1>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+    </div>
+
+    <section id="recipeContainer"></section>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <h3>Ingredients</h3>
+            <ul id="ingredientsList"></ul>
+            <h3>Steps</h3>
+            <ol id="stepsList"></ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
